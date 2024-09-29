@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title #{title}
+    link(rel="stylesheet", href='/bootstrap/css/amelia.bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    nav.navbar.navbar-default
+      .container
+        .navbar-header
+          a.navbar-brand(href='/') Recipe Recommendation System
+        ul.nav.navbar-nav
+          li: a(href='/recipes') Recipes
+          li: a(href='/categories') Categories
+          li: a(href='/reviews') Reviews
+          li: a(href='/about') About
+    .container
+      h1 #{recipe.name}
+      .text-center
+        img(src=recipe.imageUrl, alt=recipe.name, class="img-fluid recipe-image")
+      .recipe-details
+        p.card-text= recipe.description
+        p.card-text Cook Time: #{recipe.cookingTime}
+        p.card-text Fun Fact: #{recipe.funFact}

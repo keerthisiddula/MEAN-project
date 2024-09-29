@@ -1,0 +1,213 @@
+/* Styles for the homepage */
+.homepage h1 {
+  font-size: 4rem;
+  text-align: center;
+
+}
+
+.homepage h2 {
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+
+}
+
+/* Styles for other pages */
+.page h1 {
+  font-size: 1.5rem;
+  font-family: Arial, sans-serif;
+  
+}
+
+.page h2 {
+  font-size: 2rem;
+  font-family: Arial, sans-serif;
+  
+}
+
+.container.about-page {
+  margin: 20px auto; /* Center the container */
+  padding: 15px; /* Add padding */
+  max-width: 800px; /* Set a maximum width */
+}
+
+.about-page h1 {
+  font-size: 2.5rem; /* Adjust header size */
+  text-align: center; /* Center the header */
+  margin-bottom: 20px; /* Space below the header */
+}
+
+.about-page p {
+  font-size: 2rem; /* Adjust paragraph size */
+  line-height: 1.6; /* Better line height for readability */
+  margin-bottom: 15px; /* Space below each paragraph */
+  text-align: justify; /* Justify text for a cleaner look */
+}
+
+
+
+/* General body font size */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px; /* Base font size */
+  text-align: center;
+}
+
+/* Ensure images are responsive */
+.img-responsive {
+  max-width: 100%; /* Ensures images scale within their container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Centering the recipe image and making it smaller */
+.recipe-image {
+  max-width: 50%; /* Make the image smaller */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Treat as a block element */
+  margin: 0 auto; /* Center the image */
+}
+
+/* Making the text larger */
+.large-text {
+  font-size: 1.5rem; /* Adjust this size as needed */
+  line-height: 1.6; /* Increase line height for readability */
+}
+
+/* Optionally, for the recipe details */
+.recipe-details {
+  text-align: center; /* Center-align text for details */
+  margin-top: 20px; /* Space above details */
+  font-size: 2rem;
+}
+
+
+/* Styles for recipe cards */
+.card {
+  margin-bottom: 10px; /* Reduced spacing between cards */
+  border: 1px solid #ddd; /* Border for visibility */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* To contain floated elements */
+  padding: 15px; /* Padding inside the card */
+  display: flex; /* Flexbox for vertical alignment */
+  flex-direction: column; /* Stack children vertically */
+  height: 100%; /* Ensure card height is consistent */
+  text-align: center; /* Center text for better alignment */
+}
+
+/* Recipe image style */
+.card-img-top {
+  width: 100%; /* Full width */
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover; /* Ensure it covers the area without distortion */
+}
+
+/* Card body alignment */
+.card-body {
+  flex: 1; /* Allow body to expand */
+  display: flex; /* Flexbox for vertical alignment */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Space between items */
+}
+
+/* Additional text styling */
+.card-title {
+  font-size: 2.2rem; /* Increase font size for titles */
+  margin-bottom: 10px; /* Space below the title */
+}
+
+.card-text {
+  font-size: 1rem; /* Font size for description text */
+  margin: 5px 0; /* Space around text */
+}
+
+.img-responsive {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+}
+
+.card {
+  margin-bottom: 20px; /* Space between cards */
+  border: 1px solid #ddd; /* Border for visibility */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Contain floated elements */
+}
+
+/* General Container Styles */
+.container {
+  max-width: 1200px; /* Limit maximum width */
+  margin: 20px auto; /* Center the container */
+}
+
+/* Card Styles */
+.card {
+  margin-bottom: 20px; /* Space between cards */
+  border: 1px solid #ddd; /* Border for visibility */
+  border-radius: 5px; /* Rounded corners */
+  overflow: hidden; /* Contain floated elements */
+  text-align: center; /* Center text in card */
+}
+
+/* Image Styles */
+.card img {
+  width: 100%; /* Make image fit the card width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Cover the area, cropping as needed */
+}
+
+/* Heading Styles */
+h1, h2 {
+  font-size: 3rem; /* Make headings bold */
+  color: #ffffff; /* Dark color for better readability */
+}
+
+h2 {
+  margin-top: 30px; /* Space above category headings */
+  margin-bottom: 10px; /* Space below category headings */
+}
+
+/* Description Styles */
+.card-body {
+  padding: 15px; /* Padding for card body */
+}
+
+.card-title {
+  font-size: 3rem; /* Adjust title size */
+  margin-bottom: 10px; /* Space below title */
+}
+
+.card-text {
+  font-size: 2rem; /* Adjust description size */
+  line-height: 1.5; /* Better line height for readability */
+  color: #000000; /* Gray color for descriptions */
+}
+
+
+/* Row styles */
+.row {
+  display: flex; /* Use flexbox for row layout */
+  flex-wrap: wrap; /* Allow wrapping to the next line */
+  margin: 0 -15px; /* Negative margin to offset padding */
+}
+
+.col-xs-12.col-sm-6.col-md-4 {
+  padding: 0 15px; /* Add padding for columns */
+  flex: 1 0 30%; /* Allow three columns in a row */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+
+
+/* Button styles */
+.btn {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white; /* Button text color */
+  text-align: center; /* Center text */
+  padding: 10px; /* Padding for button */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* No underline */
+  display: inline-block; /* Display inline-block */
+  transition: background-color 0.3s; /* Transition effect */
+}
+
+.btn:hover {
+  background-color: #003a77; /* Darker blue on hover */
+}

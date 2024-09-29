@@ -1,0 +1,54 @@
+extends layout
+
+block content
+  .container
+    h1 Customer Reviews
+    p We value your feedback! Read what others have to say about our recipes.
+
+    .row
+      .col-xs-12
+        .panel.panel-primary
+          .panel-heading
+            h3.panel-title Recent Reviews
+          .panel-body.review-container
+            .review
+              .well.well-sm
+                span.rating
+                  span.glyphicon.glyphicon-star
+                  span.glyphicon.glyphicon-star
+                  span.glyphicon.glyphicon-star
+                  span.glyphicon.glyphicon-star
+                  span.glyphicon.glyphicon-star
+                span.reviewAuthor John Doe
+                small.reviewTimestamp  12 August 2024
+                p Absolutely delicious! A must-try recipe!
+
+            .review
+              .well.well-sm
+                span.rating
+                  span.glyphicon.glyphicon-star
+                  span.glyphicon.glyphicon-star
+                  span.glyphicon.glyphicon-star-empty
+                  span.glyphicon.glyphicon-star-empty
+                  span.glyphicon.glyphicon-star-empty
+                span.reviewAuthor Andrew Sina
+                small.reviewTimestamp  16 September 2024
+                p It was good, but I think it could use more seasoning.
+
+    h2 Add Your Review
+    form(action="/recipes/review", method="post")
+      .form-group
+        label(for="name") Name
+        input#name.form-control(type="text", name="name", required)
+      .form-group
+        label(for="rating") Rating
+        select#rating.form-control(name="rating")
+          option(value="5") 5
+          option(value="4") 4
+          option(value="3") 3
+          option(value="2") 2
+          option(value="1") 1
+      .form-group
+        label(for="review") Review
+        textarea#review.form-control(name="review", rows="5", required)
+      button.btn.btn-primary(type="submit") Submit Review

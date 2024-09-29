@@ -1,0 +1,32 @@
+// app_server/views/_includes/sharedHTMLfunctions.jade
+
+// Function to output rating stars
+// Usage: +outputRating(rating)
+mixin outputRating(rating)
+  span.rating
+    each star in [1, 2, 3, 4, 5]
+      if star <= rating
+        span.glyphicon.glyphicon-star
+      else
+        span.glyphicon.glyphicon-star-empty
+
+// Function to create a breadcrumb navigation
+// Usage: +breadcrumb(crumbs)
+mixin breadcrumb(crumbs)
+  ol.breadcrumb
+    each crumb in crumbs
+      if crumb.link
+        li: a(href=crumb.link) #{crumb.title}
+      else
+        li.active #{crumb.title}
+
+// Function for a simple header
+mixin header(title)
+  header
+    h1 #{title}
+    hr
+
+// Function for a footer
+mixin footer()
+  footer
+    p &copy; 2024 Recipe Finder. All rights reserved.

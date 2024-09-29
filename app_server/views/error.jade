@@ -1,0 +1,10 @@
+// error.jade
+doctype html
+html
+  head
+    title #{title}
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.min.css')
+  body
+    h1= message
+    h2= error.status
+    pre #{error.stack}
